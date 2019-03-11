@@ -15,6 +15,6 @@ end
 function event_handin(e)
 
 eq.set_data(e.other:GetCleanName() .. "_Casino") + e.other:GetPlatinum
-e.other:Message(315,"Your platinum has been credited to your account.  Your current balance is: " eq.get_data(e.other:GetCleanName() .. "_Casino");
+e.other:Message(315,"Your platinum has been credited to your character.  Your current balance is: " eq.get_data(e.other:GetCleanName() .. "_Casino");
 
 end
