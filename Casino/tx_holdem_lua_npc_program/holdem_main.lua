@@ -3,7 +3,7 @@
 --By Rudeboy88
 --February 2019
 
-function event say(e)
+function event_say(e)
 
 --NPC Hail dialogue
 if (e.message:findi("hail")) then
@@ -21,7 +21,7 @@ if (e.message:findi("credit")) then
 end
 
 --Handing Platinum to NPC, NPC taking said value and adding it to your bucket.
-function event handin
+function event_handin(e)
 
 eq.get_data(e.other:GetCleanName() .. "_Casino") + e.other:GetPlatinum
 e.other:Message(315,"Your platinum has been credited to your account.  Your current balance is: " eq.get_data(e.other:GetCleanName() .. "_Casino");
