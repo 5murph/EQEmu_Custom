@@ -1,7 +1,8 @@
 --Texas Holdem
 --Main Body
 --By Rudeboy88
---February 2019
+--Started: 2019.02
+--Version 1.0 Compelted: 
 
 function event_say(e)
 
@@ -13,17 +14,19 @@ if (e.message:findi("deal")) then
 	e.other:Message(315,"To buy a seat at the table, you will need a balance of at least 200 platinum.  Please note I only accept platinum.");
 end
 if (e.message:findi("out")) then
-	$cashout == eq.get_data(e.other:GetCleanName() .. "_Casino")
-	e.other:AddCash($cashout);
+	local cashout = eq.get_data(e.other:GetCleanName() .. "_Casino");
+	e.other:GiveCash(0, 0, 0, tonumber(cashout));
 end
 if (e.message:findi("credit")) then
-	e.other:Message(315,"Currently your balance is " eq.get_data(e.other:GetCleanName() .. "_Casino");
+	e.other:Message(315, "Your current balance is: " .. eq.get_data(e.other:AccountID() .. "_Casino") .. ".");
 end
 
 --Handing Platinum to NPC, NPC taking said value and adding it to your bucket.
 function event_handin(e)
 
-eq.get_data(e.other:GetCleanName() .. "_Casino") + e.other:GetPlatinum
+local h1 = eq.get_data(e.other:GetCleanName() .. "_Casino"); 
+local h2 = e.trade.platinum;
+local h3 = h1 + h2;
 e.other:Message(315,"Your platinum has been credited to your account.  Your current balance is: " eq.get_data(e.other:GetCleanName() .. "_Casino");
 
 --Timer Set, Table, Seat variable (for gambling), and Seat buckets (for Emptied
@@ -33,11 +36,12 @@ $ptable = 0
 $seat = 0
 
 if (e.message:findi("buyin")) and (eq.get_data(e.other:GetCleanName() .. "_Casino") >= 200) then
-	if ($ptable < 2))) then 
+	if (ptable < 2))) then 
 		Assign $seat + 1 to player
 		$seat_char = e.other:GetCleanName()
-		eq.set_data((e.other:GetCleanName() .. "_Casino") - 200)
-		$ptable + 1
+		local k1 = eq.get_data(e.other:GetCleanName() .. "_Casino"); 
+		local k2 = k1 - 200
+		ptable + 1
 		e.other:Message(315,"Please wait for other player characters.");
 	end
 	if ($ptable >= 2 and <= 10) then
@@ -81,9 +85,9 @@ end
 					$cards == math.random(156);
 		end
 		--if 9-10 players are at the table, 4 decks are used.
-		if ($ptable >=9) and ($ptable <= 10) then
+		if (ptable >=9) and (ptable <= 10) then
 		p_$seat+1
-			while (p_$seat <= $ptable) do
+			while (p_$seat <= ptable) do
 					$cards == math.random(208);
 		end
 --End Hand
