@@ -27,7 +27,7 @@ function event_trade(e)
 		local c3 = eq.get_data(e.other:AccountID() .. "_Casino");
 		local c4 = c2 + c3;
 		eq.set_data(e.other:AccountID() .. "_Casino", tostring(c4));
-		e.other:Message(315,"Your platinum has been credited to your character.  Your current balance is: " .. eq.get_data(e.other:AccountID() .. "_Casino") .. ".");
+		e.other:Message(315,"Your platinum has been credited to you.  Your current balance is: " .. eq.get_data(e.other:AccountID() .. "_Casino") .. ".");
 	end
 	item_lib.return_items(e.self, e.other, e.trade);
 end
