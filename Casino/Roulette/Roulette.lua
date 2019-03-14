@@ -1,8 +1,9 @@
 --Roulette 1.0
 function event_say(e)
-
+	--Timer Call
 	if (roulettetimer = 1) then
 		e.other:Message(315,"Roulette is now taking bets!");
+	end
 	--NPC Hail dialogue
 	if (e.message:findi("hail")) then
 		e.other:Message(315,"Hail!  Would you like to gamble on a round of [" .. eq.say_link("Roulette",false,"Roulette") .. "].  If you would like to [" .. eq.say_link("Play",false,"Play") .. "], please give yourself a balance of at least 200 platinum pieces with the Casino Banker!");
@@ -26,35 +27,38 @@ function event_say(e)
 --Table seating, bet loop
 	while bs < 9 and timer <= 45 do
 		if (e.message:findi("join")) then
-			eq.set_data("CRS_" .. tonumber(bs), tostring(e.other:AccountID()));
+			eq.set_data("CRS_" .. tonumber(bs) .."," .. tostring(e.other:AccountID()));
 			e.other:Message(315,"You have been assigned to seat ".. bs ..".");
 			bs + 1;
 		elseif (e.message:findi("straight")) and timer < 45 then
 			e.other:Message(315, "What number would you like to bet on?");
 			local b1 = eq.get_data(e.other:AccountID() .. "_Casino");
-			pull bucket value, concantate bet location onto it
 			e.other:Message(315, "How much would you like to bet?");
 			local b2 = number
 			local b3 = b1 - b2
-			local b4 = eq.get_data(CRS_tonumbere.other:AccountID() .. "_Casino");
+			local b4 = e.other:AccountID()
+			while br < 9 do
+			--account to bucket, bucket to account, etc.
+				if (eq.get_data(tonumber(b4)) = e:other:AccountID()) then
+					local b5 = eq.get_data(tostring(CRS_tonumbere.other:AccountID() .. "_Casino");
 			eq.set_data(e.other:AccountID() .. "_Casino", tostring(b3));
 			e.other:Message(315, "Your bet has been accepted.  Current Balance: ".. eq.get_data(e.other:AccountID() .. "_Casino") ..".");
 		elseif bs = 8 or timer >45 do
 			e.other:Message(315,"This table is full.  Please find another or wait until a spot opens.");
-
---Wheel Spin and Win Checks
+		end
+		if seat_firstbet = 1 then
+		
+--Timer End; Wheel Spin and Win Checks
 	if (timer = 60) then
 		e.other:Message(315,"The roulette ball rolls!");
 		win = math.random(38)
-		--plugin name number properly on this line
-		e.other:Message(315,"The roulette ball is ".. win ..".");
+		e.other:Message(315,"The ball stopped on".. eq.getdata("RouletteNo_"tonumber(win)".");
 		bs = 0;
-	end
-	
 --Win Checks, Payout loop
-	local bt = 1
-	local d1 = 1
+	end
+	bt = 1
 	while bt < 9
+		local 	d1 = 1
 		while d1 < fullroll
 			if eq.get_data(seat_(tonumber(bt))_(tonumber(d1))) ~= 0 and if eq.get_data(seat_(tonumber(bt))_(tonumber(d1))) ~= nil then 
 --Straight
@@ -94,9 +98,9 @@ function event_say(e)
 					e.other:Message(315, "Your bet or bets paid out ".. c14 .." to your account.");
 --Split
 				elseif bucket seat.accountid (bet = 103-186) then 
-					local c13 = eq.get_data(e.other:AccountID() .. "_Casino");
-					local c14 = c15 * 2;
-					e.other:Message(315, "Your bet or bets paid out ".. c14 .." to your account.");
+					local c15 = eq.get_data(e.other:AccountID() .. "_Casino");
+					local c16 = c15 * 2;
+					e.other:Message(315, "Your bet or bets paid out ".. c16 .." to your account.");
 				end
 				bt + 1;
 			end
@@ -114,7 +118,6 @@ function event_say(e)
 		eq.set_data(bs_seat_7, 0);
 		eq.set_data(bs_seat_8, 0);
 		bt = 0;
-	end
 	end
 --this end is for the function_say.
 end
