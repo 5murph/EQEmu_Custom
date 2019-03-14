@@ -13,21 +13,6 @@ end
 if (e.message:findi("deal")) then
 	e.other:Message(315,"To buy a seat at the table, you will need a balance of at least 200 platinum.  Please note I only accept platinum.");
 end
-if (e.message:findi("out")) then
-	local cashout = eq.get_data(e.other:GetCleanName() .. "_Casino");
-	e.other:GiveCash(0, 0, 0, tonumber(cashout));
-end
-if (e.message:findi("credit")) then
-	e.other:Message(315, "Your current balance is: " .. eq.get_data(e.other:AccountID() .. "_Casino") .. ".");
-end
-
---Handing Platinum to NPC, NPC taking said value and adding it to your bucket.
-function event_handin(e)
-
-local h1 = eq.get_data(e.other:GetCleanName() .. "_Casino"); 
-local h2 = e.trade.platinum;
-local h3 = h1 + h2;
-e.other:Message(315,"Your platinum has been credited to your account.  Your current balance is: " eq.get_data(e.other:GetCleanName() .. "_Casino");
 
 --Timer Set, Table, Seat variable (for gambling), and Seat buckets (for Emptied
 
