@@ -1,40 +1,68 @@
---Roulette 1.0
+--Roulette Version 1.0
+--On spawn, empty table and start timer
 function event_spawn(e)
 	eq.set_timer("roulette",90000);
 	e.self:Shout("Roulette now taking bets!");
-		function event_say(e)
-		if (roulettetimer = 1) then
-			e.other:Message(315,"Roulette is now taking bets!");
+	eq.set_data("CRS_1", '0');
+	eq.set_data("CRS_2", '0');
+	eq.set_data("CRS_3", '0');
+	eq.set_data("CRS_4", '0');
+	eq.set_data("CRS_5", '0');
+	eq.set_data("CRS_6", '0');
+	eq.set_data("CRS_7", '0');
+	eq.set_data("CRS_8", '0');
+	eq.set_data("CRS_T", '1');
+end
+--Once timer ends -> roll, empty table, reset timer, call for bets
+function event_timer(e)
+	if (e.timer == "roulette") then
+		e.self:Say("The roulette ball rolls!");
+		eq.stop_timer("roulette");
+		eq.set_timer("roulette",90000);
+		eq.set_data("CRS_1", '0');
+		eq.set_data("CRS_2", '0');
+		eq.set_data("CRS_3", '0');
+		eq.set_data("CRS_4", '0');
+		eq.set_data("CRS_5", '0');
+		eq.set_data("CRS_6", '0');
+		eq.set_data("CRS_7", '0');
+		eq.set_data("CRS_8", '0');
+		eq.set_data("CRS_T", '1');
+	end
+end
+function event_say(e)
+	if (roulettetimer = 1) then
+		e.other:Message(315,"Roulette is now taking bets!");
+	end
+	if (e.message:findi("hail")) then
+		e.other:Message(315,"Hail!  Would you like to gamble on a round of [" .. eq.say_link("Roulette",false,"Roulette") .. "].  If you would like to [" .. eq.say_link("Play",false,"Play") .. "], please give yourself a balance of at least 200 platinum pieces with the Casino Banker!");
+	end
+	if (e.message:findi("play")) then
+		if timer < 80 then
+			bs = 1;
+			local a1 = eq.get_data(e.other:AccountID() .. "_Casino");
+			e.other:Message(315,"You have been added to the table for this round.  Make sure to place your [" .. eq.say_link("bets",false,"bets") .. "]!");
+		elseif timer >= 80 then
+			e.other:Message(315,"The ball is about to roll.  Please wait a moment while this round finishes.");
 		end
-		if (e.message:findi("hail")) then
-			e.other:Message(315,"Hail!  Would you like to gamble on a round of [" .. eq.say_link("Roulette",false,"Roulette") .. "].  If you would like to [" .. eq.say_link("Play",false,"Play") .. "], please give yourself a balance of at least 200 platinum pieces with the Casino Banker!");
+	end
+	if (e.message:findi("types")) then
+		if timer < 80 then
+			e.other:Message(315,"The types of bets you can place are: [" .. eq.say_link("Straight",false,"Straight") .. "], [" .. eq.say_link("Split",false,"Split") .. "], [" .. eq.say_link("Street",false,"Street") .. "], [" .. eq.say_link("Corner",false,"Corner") .. "], [" .. eq.say_link("Sucker",false,"Sucker") .. "], [" .. eq.say_link("Line",false,"Line") .. "], [" .. eq.say_link("Columns",false,"Columns") .. "], [" .. eq.say_link("Dozens",false,"Dozens") .. "], [" .. eq.say_link("OddsEvens",false,"OddsEvens") .. "], or [" .. eq.say_link("LowHigh",false,"LowHigh") .. "]  ");
+		elseif timer >= 80 then
+			e.other:Message(315,"The ball is about to roll.  Please wait a moment while this round finishes.");
 		end
-		if (e.message:findi("play")) then
-			if timer < 80 then
-				bs = 1;
-				local a1 = eq.get_data(e.other:AccountID() .. "_Casino");
-				e.other:Message(315,"You have been added to the table for this round.  Make sure to place your [" .. eq.say_link("bets",false,"bets") .. "]!");
-			elseif timer >= 80 then
-				e.other:Message(315,"The ball is about to roll.  Please wait a moment while this round finishes.");
-			end
-		end
-		if (e.message:findi("types")) then
-			if timer < 80 then
-				e.other:Message(315,"The types of bets you can place are: [" .. eq.say_link("Straight",false,"Straight") .. "], [" .. eq.say_link("Split",false,"Split") .. "], [" .. eq.say_link("Street",false,"Street") .. "], [" .. eq.say_link("Corner",false,"Corner") .. "], [" .. eq.say_link("Sucker",false,"Sucker") .. "], [" .. eq.say_link("Line",false,"Line") .. "], [" .. eq.say_link("Columns",false,"Columns") .. "], [" .. eq.say_link("Dozens",false,"Dozens") .. "], [" .. eq.say_link("OddsEvens",false,"OddsEvens") .. "], or [" .. eq.say_link("LowHigh",false,"LowHigh") .. "]  ");
-			elseif timer >= 80 then
-				e.other:Message(315,"The ball is about to roll.  Please wait a moment while this round finishes.");
-			end
-		end
+	end
 --Table seating loop
-		while bs < 9 and timer <= 80 do
-			if (e.message:findi("join")) then
-				eq.set_data("CRS_" .. tonumber(bs) .."," .. tostring(e.other:AccountID()));
-				e.other:Message(315,"You have been assigned to seat ".. bs ..".  You can now place [bets].");
-				bs + 1;
-			elseif bs > 8 or timer >= 80 then
-				e.other:Message(315,"The ball is about to roll.  Please wait a moment while this round finishes.");
-			end
+	while bs < 9 and timer <= 80 do
+		if (e.message:findi("join")) then
+			eq.set_data("CRS_" .. tonumber(bs) .."," .. tostring(e.other:AccountID()));
+			e.other:Message(315,"You have been assigned to seat ".. bs ..".  You can now place [bets].");
+			bs + 1;
+		elseif bs > 8 or timer >= 80 then
+			e.other:Message(315,"The ball is about to roll.  Please wait a moment while this round finishes.");
 		end
+	end
 --Board Display
 		if (e.message:findi("bets")) and timer < 80 then
 			br = 1
@@ -224,19 +252,6 @@ function event_timer(e)
 				bt + 1;
 			end
 		end
-	end
---Clear Seats
-	if bt = 9 then 
-		eq.set_data(bs_seat_1, 0);
-		eq.set_data(bs_seat_2, 0);
-		eq.set_data(bs_seat_3, 0);
-		eq.set_data(bs_seat_4, 0);
-		eq.set_data(bs_seat_5, 0);
-		eq.set_data(bs_seat_6, 0);
-		eq.set_data(bs_seat_7, 0);
-		eq.set_data(bs_seat_8, 0);
-		bt = 0;
-		--timer delay start here
 	end
 --this end is for the function_say.
 end
