@@ -18,7 +18,7 @@ end
 function event_timer(e)
 	if (e.timer == "dice") then
 		e.self:Say("Here's the roll!");
-		local y1 = math.random(1);
+		local y1 = math.random(100);
 		e.self:Say("The winning number is: " .. y1 .. "!");
 		eq.set_data("DRS_T", '1');
 		local y2 = 1;
@@ -43,9 +43,6 @@ function event_timer(e)
 							local y7 = y5 + z1;
 							eq.set_data(tostring(y9) .. "_Casino", tostring(y7));
 							end
-						end
-						if (eq.get_data("DRS_" .. tostring(y2) .. "_" .. tostring(y3)) == 0) then
-							e.self:Say("firk!4");
 						end
 					eq.set_data("DRS_" .. tostring(y2) .. "_" .. tostring(y3), '0');	
 					y3 = y3 + 1;
