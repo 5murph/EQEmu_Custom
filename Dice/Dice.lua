@@ -39,8 +39,8 @@ function event_timer(e)
 							if (tostring(y1) == tostring(y3)) then
 							local y5 = eq.get_data("DRS_" .. tostring(y2) .. "_" .. tostring(y3));
 							local y6 = eq.get_data(tostring(y9) .. "_Casino") 
-							local z1 = y6 * 10;
-							local y7 = y5 + z1;
+							local z1 = y5 * 10;
+							local y7 = y6 + z1;
 							eq.set_data(tostring(y9) .. "_Casino", tostring(y7));
 							end
 						end
