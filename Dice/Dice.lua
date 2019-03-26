@@ -54,7 +54,7 @@ function event_timer(e)
 		end
 	end
 	eq.set_timer("dice",30000);
-	e.self:Shout("Dice is now taking bets!");
+	e.self:Say("Dice is now taking bets!");
 end
 --Basic Dialogue
 function event_say(e)
