@@ -818,11 +818,11 @@ INSERT INTO `data_buckets` (`key`, `value`) VALUES
 
 ('DRS_T', 0),
 
-('DRS_C_1' 0,),
-('DRS_C_2' 0,),
-('DRS_C_3' 0,),
-('DRS_C_4' 0,),
-('DRS_C_5' 0,),
-('DRS_C_6' 0,),
-('DRS_C_7' 0,),
-('DRS_C_8' 0,);
+('DRS_C_1' 0),
+('DRS_C_2' 0),
+('DRS_C_3' 0),
+('DRS_C_4' 0),
+('DRS_C_5' 0),
+('DRS_C_6' 0),
+('DRS_C_7' 0),
+('DRS_C_8' 0);
