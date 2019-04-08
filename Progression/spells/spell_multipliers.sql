@@ -1,0 +1,1 @@
+--Spell Multiplier Script
