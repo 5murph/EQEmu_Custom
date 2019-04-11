@@ -95,404 +95,304 @@ function event_say(e)
 --If you clicked one of the previous numbers, you will be prompted for a bet, and that number you bet on becomes the variable q.
 	if(e.message:findi("01")) then
 	q = 01;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("02")) then
 	q = 02;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("03")) then
 	q = 03;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("04")) then
 	q = 04;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("05")) then
 	q = 05;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("06")) then
 	q = 06;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("07")) then
 	q = 07;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("08")) then
 	q = 08;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("09")) then
 	q = 09;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("10")) then
 	q = 10;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("11")) then
 	q = 11;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("12")) then
 	q = 12;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("13")) then
 	q = 13;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("14")) then
 	q = 14;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("15")) then
 	q = 15;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("16")) then
 	q = 16;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("17")) then
 	q = 17;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("18")) then
 	q = 18;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("19")) then
 	q = 19;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("20")) then
 	q = 20;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("21")) then
 	q = 21;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("22")) then
 	q = 22;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("23")) then
 	q = 23;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("24")) then
 	q = 24;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("25")) then
 	q = 25;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("26")) then
 	q = 26;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("27")) then
 	q = 27;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("28")) then
 	q = 28;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("29")) then
 	q = 29;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("30")) then
 	q = 30;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("31")) then
 	q = 31;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("32")) then
 	q = 32;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("33")) then
 	q = 33;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("34")) then
 	q = 34;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("35")) then
 	q = 35;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("36")) then
 	q = 36;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("37")) then
 	q = 37;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("38")) then
 	q = 38;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("39")) then
 	q = 39;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("40")) then
 	q = 40;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("41")) then
 	q = 41;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("42")) then
 	q = 42;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("43")) then
 	q = 43;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("44")) then
 	q = 44;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("45")) then
 	q = 45;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("46")) then
 	q = 46;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("47")) then
 	q = 47;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("48")) then
 	q = 48;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("49")) then
 	q = 49;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("50")) then
 	q = 50;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("51")) then
 	q = 51;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("52")) then
 	q = 52;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("53")) then
 	q = 53;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("54")) then
 	q = 54;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("55")) then
 	q = 55;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("56")) then
 	q = 56;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("57")) then
 	q = 57;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("58")) then
 	q = 58;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("59")) then
 	q = 59;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("60")) then
 	q = 60;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("61")) then
 	q = 61;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("62")) then
 	q = 62;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("63")) then
 	q = 63;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("64")) then
 	q = 64;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("65")) then
 	q = 65;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("66")) then
 	q = 66;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("67")) then
 	q = 67;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("68")) then
 	q = 68;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("69")) then
 	q = 69;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("70")) then
 	q = 70;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("71")) then
 	q = 71;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("72")) then
 	q = 72;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("73")) then
 	q = 73;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("74")) then
 	q = 74;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("75")) then
 	q = 75;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("76")) then
 	q = 76;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("77")) then
 	q = 77;
-	
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
 	elseif(e.message:findi("78")) then
 	q = 78;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("79")) then
 	q = 79
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("80")) then
 	q = 80;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("81")) then
 	q = 81;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("82")) then
 	q = 82;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("83")) then
 	q = 83;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("84")) then
 	q = 84;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("85")) then
 	q = 85;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("86")) then
 	q = 86;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("87")) then
 	q = 87;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("88")) then
 	q = 88;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("89")) then
 	q = 89;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("90")) then
 	q = 90;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("91")) then
 	q = 91;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("92")) then
 	q = 92;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("93")) then
 	q = 93;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("94")) then
 	q = 94;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("95")) then
 	q = 95;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("96")) then
 	q = 96;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("97")) then
 	q = 97;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("98")) then
 	q = 98;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("99")) then
 	q = 99;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-	
 	elseif(e.message:findi("I00")) then
 	q = 100;
 	e.other:Message(315, "You have chosen ".. q ..".  Would you like to bet [" .. eq.say_link("fifty",false,"fifty") .. "], [" .. eq.say_link("onehundo",false,"onehundo") .. "], [" .. eq.say_link("fivehundo",false,"fivehundo") .. "], [" .. eq.say_link("onek",false,"onek") .. "], [" .. eq.say_link("fivek",false,"fivek") .. "]");
-
 	end
 --Bets: convert the bucket seat back to an accountID, and subtract bet from their casino acc, then add it to seat/number bet.
 	if(e.message:findi("fifty")) then
