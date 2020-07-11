@@ -1,5 +1,5 @@
 # EQEmu_Custom
-Custom plugins and quest dialogs written in Perl and LUA for use with EQEmulator.
+Custom plugins and scripts written in Perl and LUA for use with EQEmulator.
 
 Saved here for easy access and preservation, these documents have been created for the www.Darkonites.com EQEmulator server(s).
 
