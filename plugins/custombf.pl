@@ -1,0 +1,69 @@
+my %bf = (
+301 => 117, #cobaltscar
+302 => 121, #crystalcaverns
+303 => 123, #necropolis
+304 => 116, #eastwastes
+305 => 118, #greatdivide
+306 => 110, #iceclad
+307 => 129, #icewell
+308 => 113, #kael
+309 => 127, #growthplane
+310 => 126, #pomischief
+311 => 125, #sirens
+312 => 124, #templeveeshan
+313 => 119, #wakening
+314 => 115, #thurgadina
+315 => 111, #frozenshadow
+316 => 112, #velketor
+317 => 120, #westwastes
+318 => 114, #skyshrine
+401 => 154, #acrylia
+402 => 179, #akheva
+403 => 174, #dawnshroud
+404 => 116, #echo
+405 => 157, #fungus
+406 => 163, #griegs
+407 => 167, #grimling
+408 => 166, #hollowshade
+409 => 160, #katta
+410 => 168, #mseru
+411 => 169, #monsletalis
+412 => 161, #netherbian
+413 => 156, #paludal
+414 => 159, #sseru
+415 => 165, #shadeweaver
+416 => 150, #shadowhaven
+417 => 162, #ssra
+418 => 164, #thedeep
+419 => 171, #thegrey
+420 => 173, #maiden
+421 => 152, #nexus
+422 => 175, #scarlet
+423 => 181, #jaggedpine
+424 => 176, #umbral
+425 => 158, #vexthal
+426 => 172, #tenebrous
+427 => 170, #twilight
+501 => 201, #pojustice
+502 => 203, #potranquility
+503 => 206, #poinnovation
+504 => 205, #podisease
+505 => 204, #ponightmare
+506 => 186, #hateplaneb
+601 => 109, #veksar   
+602 => 224, #gunthak
+603 => 225, #dulak
+604 => 226, #torgiran
+605 => 227, #nadox
+606 => 228, #hatesfury
+607 => 277  #chardokb
+);
+sub custombf {
+	my $client = plugin::val('client');
+	$w1 = quest::get_data($client->AccountID() . _Progression) * 110;
+	my $text = shift;
+		for(keys %bf){
+			if ($w1 >= $_){
+				quest::set_zone_flag($bf{$_});}}
+	plugin::Whisper ("You have been granted flags!");}
+1;
