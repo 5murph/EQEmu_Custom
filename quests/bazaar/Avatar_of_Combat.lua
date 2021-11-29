@@ -6,8 +6,6 @@
 -- Listing Order/Expansion listings by Allakhazam
 -- Pulled 2019.01.01
 -- Version 1.0 Completed 2019.01.31
--- By Rudeboy88
--- Pro Tip: Use Notepad++ or Vim for easy mass formatting.
 
 function event_say(e)
 	if (e.message:findi("hail")) then
